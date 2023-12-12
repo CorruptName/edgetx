@@ -7,6 +7,8 @@ option(INTERNAL_MODULE_PPM "Support for PPM internal module" OFF)
 option(AUTOUPDATE "Auto update internal chips from SD" OFF)
 option(BIND_KEY "Enable bind button" OFF)
 option(BLUETOOTH "FrSky BT module support" OFF)
+option(SURFACE_GUI "Use surface GUI" OFF)
+
 
 set(USE_RTC_CLOCK YES)
 set(HARDWARE_EXTERNAL_MODULE YES)
@@ -524,6 +526,10 @@ if(USB_CHARGER)
   set(FIRMWARE_TARGET_SRC
     ${FIRMWARE_TARGET_SRC} usb_charger_driver.cpp)
   add_definitions(-DUSB_CHARGER)
+endif()
+
+if(SURFACE_GUI)
+  add_definitions(-DSURFACE_GUI)
 endif()
 
 if(BLUETOOTH)

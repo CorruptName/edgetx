@@ -162,7 +162,9 @@ POT_CONFIG = {
     },
     "zorro": {
         "P1": {"default": "POT"},
-        "P2": {"default": "POT"}
+        "P2": {"default": "POT"},
+        "P3": {"default": "NONE"},
+        "P4": {"default": "NONE"}
     },
     "pocket": {
         "P1": {"default": "POT"}
