@@ -19,6 +19,8 @@
  * GNU General Public License for more details.
  */
 
+// MODIFIED TO ADD SURFACE FUNCTIONS TO ZORRO - BY CORRUPT
+
 #ifndef _HAL_H_
 #define _HAL_H_
 
